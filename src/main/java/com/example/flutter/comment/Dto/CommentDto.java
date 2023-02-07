@@ -11,10 +11,10 @@ public class CommentDto {
     public Long id;
 
     @NotEmpty(message = "iduser should not be null or empty")
-    public String iduser;
+    public Long iduser;
 
     @NotEmpty(message = "idmovie should not be null or empty")
-    public String idmovie;
+    public int idmovie;
 
     @NotEmpty(message = "firstname should not be null or empty")
     public String firstname;

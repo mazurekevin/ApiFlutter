@@ -36,7 +36,7 @@ public class CommentController {
     }
 
     @GetMapping("/idmovie/{idmovie}")
-    public List<CommentDto> getCommentByIdmovie(@PathVariable(name = "idmovie") String idmovie){
+    public List<CommentDto> getCommentByIdmovie(@PathVariable(name = "idmovie") int idmovie){
         return this.commentService.getCommentByIdmovie(idmovie);
     }
 

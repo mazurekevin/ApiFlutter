@@ -1,4 +1,4 @@
-package com.example.flutter.comment.domain;
+package com.example.flutter.like.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,8 +10,8 @@ import lombok.*;
 @NoArgsConstructor
 
 @Entity
-@Table(name = "comment")
-public class Comment {
+@Table(name = "likemovie")
+public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,12 +22,4 @@ public class Comment {
     @Column(name = "iduser", nullable = false)
     public Long iduser;
 
-    @Column(name = "firstname", nullable = false)
-    public String firstname;
-
-    @Column(name = "lastname", nullable = false)
-    public String lastname;
-
-    @Column(name = "content", nullable = false)
-    public String content;
 }
