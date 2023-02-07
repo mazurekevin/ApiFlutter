@@ -13,5 +13,5 @@ public interface CommentService {
     CommentDto updateComment(CommentDto commentDto, long id);
     void deleteCommentById(long id);
 
-    List<CommentDto> getCommentByIdmovie(String idmovie);
+    List<CommentDto> getCommentByIdmovie(int idmovie);
 }

@@ -60,7 +60,7 @@ public class DefaultCommentService implements CommentService {
     }
 
     @Override
-    public List<CommentDto> getCommentByIdmovie(String idmovie) {
+    public List<CommentDto> getCommentByIdmovie(int idmovie) {
         List<Comment> comments = this.commentRepository.getCommentByIdmovie(idmovie);
         return comments.stream().map(comment -> mapToDto(comment)).collect(Collectors.toList());
     }
