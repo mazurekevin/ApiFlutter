@@ -41,8 +41,8 @@ public class DefaultUserService implements UserService{
     }
 
     @Override
-    public UserDto updateUser(UserDto userDto, long id) {
-        User user = this.userRepository.getById(id);
+    public UserDto updateUser(UserDto userDto) {
+        User user = this.userRepository.getById(userDto.id);
 
         user.setFirstname(user.getFirstname());
         user.setLastname(user.getLastname());

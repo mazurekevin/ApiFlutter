@@ -29,5 +29,5 @@ public class UserDto {
     public String languageIso = "fr";
 
     @NotEmpty
-    public String languageName = "France";
+    public String languageName = "French";
 }

@@ -26,6 +26,11 @@ public class UserController {
         return new ResponseEntity<>(this.userService.createUser(userDto), HttpStatus.CREATED);
     }
 
+    @PostMapping("/updateUser")
+    public ResponseEntity<UserDto> updateUser(@RequestBody UserDto userDto){
+        return new ResponseEntity<>(this.userService.updateUser(userDto), HttpStatus.OK);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<UserDto> getFollowById(@PathVariable(name = "id") long id){
         return new ResponseEntity<>(this.userService.getUserById(id),HttpStatus.OK);}
