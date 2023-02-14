@@ -30,4 +30,10 @@ public class User {
 
     @Column(name = "password", nullable = false)
     public String password;
+
+    @Column(name = "languageIso", nullable = false)
+    public String languageIso;
+
+    @Column(name = "languageName", nullable = false)
+    public String languageName;
 }

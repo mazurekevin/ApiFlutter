@@ -1,5 +1,7 @@
 package com.example.flutter.user.Dto;
 
+import jakarta.annotation.Nullable;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.validation.constraints.Email;
@@ -22,4 +24,10 @@ public class UserDto {
 
     @NotEmpty(message = "password should not be null or empty")
     public String password;
+
+    @NotEmpty
+    public String languageIso = "fr";
+
+    @NotEmpty
+    public String languageName = "France";
 }

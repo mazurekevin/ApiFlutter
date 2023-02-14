@@ -48,6 +48,8 @@ public class DefaultUserService implements UserService{
         user.setLastname(user.getLastname());
         user.setEmail(user.getEmail());
         user.setPassword(user.getPassword());
+        user.setLanguageIso(user.getLanguageIso());
+        user.setLanguageName(user.getLanguageName());
 
         User updatedUser = this.userRepository.save(user);
 
